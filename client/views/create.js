@@ -4,9 +4,9 @@ import { View, Text } from 'react-native';
 
 export default ({navigation})=>{
     return(
-        <View>
-            <Text>Create Page</Text>
-            <Form/>
+        <View style={{flex:1,justifyContent:'space-evenly',alignItems:"center",flexDirection:"column"}}>
+            <Text>Add a new Item</Text>
+            <Form submit={()=>navigation.navigate('home')}/>
         </View>
     )
 }
