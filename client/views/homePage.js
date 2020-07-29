@@ -14,7 +14,10 @@ export default ({navigation})=>{
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Shopping List</Text>
+
       <Button onPress={()=>navigation.navigate('Add')} color='blue' title="Add Item"/>
+      <Button onPress={()=>navigation.navigate('Animation')} color="yellow" title="Animation"/>
+
       <List items={items}/>
     </View>
   );
