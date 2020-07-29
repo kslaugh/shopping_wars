@@ -2,8 +2,11 @@ import React from 'react';
 import Create from './views/create';
 import { StyleSheet, View, Text } from 'react-native';
 import Home from './views/homePage';
+import Animation from "./views/animation"
 import { NavigationContainer, StackActions } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
+import { startClock } from 'react-native-reanimated';
+import animation from './views/animation';
 
 const Stack=createStackNavigator()
 
@@ -21,7 +24,12 @@ export default function App() {
             component={Create}
             options={{title:'Create'}}
             />
+            <Stack.Screen
+              name="Animation"
+              component={animation}
+            />
         </Stack.Navigator>
+        
       </NavigationContainer>
   );
 }
@@ -35,8 +43,3 @@ const styles = StyleSheet.create({
   },
 });
 
-// const FadevInView=(props)=>{
-//   const fadeAnim,{
-// {to Value:1,}
-//   }
-// }
