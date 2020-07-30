@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { ScrollView } from 'react-native';
+import { ScrollView, View, Text } from 'react-native';
 
 export default (props)=>{
     const [items,setItems]=useState(props.items)
@@ -7,7 +7,7 @@ export default (props)=>{
         <ScrollView>
             {items.map((item,idx)=>(
                 <View key={idx}>
-                    <Text>{item.name}</Text>
+                    <Text style={{color:'white'}}>{item.name}</Text>
                 </View>
             ))}
         </ScrollView>
