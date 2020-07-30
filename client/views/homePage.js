@@ -3,17 +3,15 @@ import Axios from 'axios';
 import List from '../components/list';
 import { useState, useEffect } from 'react';
 import { StyleSheet, Text, View, ScrollView, Button, Alert } from 'react-native';
-import { useIsFocused } from '@react-navigation/native';
 
 export default ({navigation})=>{
-    const isFocused=useIsFocused()
     const[items,setItems]=useState(null)
   useEffect(()=>{
     Axios.get('http://18.223.211.4/api/items/')
     .then(i=>{setItems(i.data.data);
     console.log(i.data.data)})
     .catch(e=>console.log(e))
-  },[isFocused])
+  },)
   if(items===null){return(<Text>Loading...</Text>)}
   else{
     return (
