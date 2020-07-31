@@ -5,6 +5,8 @@ import {useState} from 'react';
 import FadeIn from "../components/fadeIn";
 
 
+
+
   export default ({route, navigation})=>{
     const [item,setItem]=useState(null)
     useEffect(()=>{
@@ -28,6 +30,7 @@ import FadeIn from "../components/fadeIn";
           <Text style={{fontSize: 28, textAlign: 'center', margin: 10}}>{item.name} </Text>
           <Text style={{fontSize: 28, textAlign: 'center', margin: 10}}>{item.quantity} </Text>
           <Button onPress={handleDelete} title='Delete'/>
+          <Button onPress={(id)=>navigation.navigate('Edit',{id:id})} color="orange" title="Edit"/>
         </FadeIn>
       </View>
     )

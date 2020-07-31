@@ -5,6 +5,7 @@ import Home from './views/homePage';
 import { NavigationContainer, StackActions } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import Detail from "./views/detail"
+import Edit from "./views/detail"
 
 const Stack=createStackNavigator()
 
@@ -26,6 +27,11 @@ export default function App() {
             name="Detail"
             component={Detail}
             options={{title:'Detail'}}
+          />
+          <Stack.Screen
+            name="Edit"
+            component={Edit}
+            options={{title:'Edit'}}
           />
         </Stack.Navigator>
       </NavigationContainer>

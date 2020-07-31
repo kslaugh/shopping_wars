@@ -15,11 +15,11 @@ export default (props)=>{
         <View style={{flex:1,justifyContent:'space-evenly',alignItems:"center",flexDirection:"column"}}>
             <View>
                 <Text>Item Name:</Text>
-                <TextInput style={{borderWidth: 3,borderColor: 'grey', minWidth: 200, fontSize:30}} onChangeText={e=>setName(e)} autoCapitalize='sentences'></TextInput>
+                <TextInput style={{borderWidth: 3,borderColor: 'grey', minWidth: 200, fontSize:30}} onChangeText={e=>setName(e)} autoCapitalize='sentences' value={name}></TextInput>
             </View>
             <View>
                 <Text>Quantity:</Text>
-                <TextInput keyboardType='number-pad' onChangeText={e=>setQuantity(e)} style={{borderWidth: 3,borderColor: 'grey', minWidth: 200, fontSize:30}}></TextInput>
+                <TextInput keyboardType='number-pad' onChangeText={e=>setQuantity(e)} style={{borderWidth: 3,borderColor: 'grey', minWidth: 200, fontSize:30}} value={quantity}></TextInput>
             </View>
             <Button color='black' onPress={hClick} title='Submit'/>
         </View>
