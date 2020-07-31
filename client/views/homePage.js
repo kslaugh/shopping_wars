@@ -4,6 +4,7 @@ import List from '../components/list';
 import { useState,  useCallback } from 'react';
 import { StyleSheet, Text, View, Button } from 'react-native';
 import { useFocusEffect } from '@react-navigation/native';
+import { TouchableWithoutFeedback } from 'react-native-gesture-handler';
 
 export default ({navigation})=>{
     const[items,setItems]=useState(null)
@@ -31,9 +32,11 @@ export default ({navigation})=>{
     return (
       <View style={styles.container}>
         <Text style={styles.title}>Shopping List</Text>
-        <View style={{margin:10}}>
-          <Button onPress={()=>navigation.navigate('Add')} color='blue' title="Add Item"/>
-        </View>
+        <TouchableWithoutFeedback onPress={()=>navigation.navigate('Add')}>
+          <View style={{margin:10, backgroundColor:"blue", padding:5, width:100, alignItems:"center", borderRadius:10}}>
+            <Text style={{color:'white'}} title="Add Item">Add Item</Text>
+          </View>
+        </TouchableWithoutFeedback>
         <List items={items} press={hDetail} refreshing={refreshing} refresh={hRefresh}/>
       </View>
     );
