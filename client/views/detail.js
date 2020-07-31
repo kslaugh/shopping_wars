@@ -22,16 +22,16 @@ import FadeIn from "../components/fadeIn";
       .catch(e=>console.log(e))
   }
 
-    if(item===null) return "loading...."
+    if(item===null) return <Text>"loading...."</Text>
     
     return(
-        <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
-        <FadeIn style={{width: 250, height: 50}}>
-          <Text style={{fontSize: 28, textAlign: 'center', margin: 10}}>{item.name} </Text>
-          <Text style={{fontSize: 28, textAlign: 'center', margin: 10}}>{item.quantity} </Text>
-          <Button onPress={handleDelete} title='Delete'/>
-          <Button onPress={()=>navigation.navigate('Edit',{id:item.id})} color="orange" title="Edit"/>
-        </FadeIn>
+        <View style={{flex: 1, alignItems: 'center', justifyContent: 'center', flexDirection:'column'}}>
+            <FadeIn >
+                <Text style={{fontSize: 28, textAlign: 'center', margin: 10}}>{item.name} </Text>
+                <Text style={{fontSize: 28, textAlign: 'center', margin: 10}}>{item.quantity} </Text>
+            </FadeIn>
+            <Button style={{fontSize:20}} onPress={handleDelete} title='Delete'/>
+            <Button onPress={()=>navigation.navigate('Edit',{id:item.id})} color="orange" title="Edit"/>
       </View>
     )
   }
