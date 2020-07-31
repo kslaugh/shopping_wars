@@ -23,7 +23,11 @@ import { TouchableWithoutFeedback } from 'react-native-gesture-handler';
       .catch(e=>console.log(e))
   }
 
-    if(item===null) return <Text>"loading...."</Text>
+    if(item===null) return(
+      <View style={{flex: 1, alignItems: 'center', justifyContent: 'center', flexDirection:'column',backgroundColor:"black"}}>
+        <Text style={{color:'white'}}>"loading...."</Text>
+      </View>
+      ) 
     
     return(
           <View style={{flex: 1, alignItems: 'center', justifyContent: 'center', flexDirection:'column',backgroundColor:"black"}}>

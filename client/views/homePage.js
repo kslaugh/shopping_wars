@@ -28,7 +28,11 @@ export default ({navigation})=>{
       })
       .catch(e=>console.log(e))
      }
-  if(items===null){return(<Text>Loading...</Text>)}
+  if(items===null){return(
+    <View style={styles.container}>
+      <Text style={{color:'white'}}>"loading...."</Text>
+    </View>
+    ) }
   else{
     return (
       <View style={styles.container}>
