@@ -1,10 +1,10 @@
 {
-  "expoServerPort": null,
-  "expoServerNgrokUrl": null,
-  "packagerNgrokUrl": null,
-  "ngrokPid": null,
-  "packagerPort": null,
-  "packagerPid": null,
+  "expoServerPort": 19000,
+  "expoServerNgrokUrl": "https://mt-y7m.anonymous.client.exp.direct",
+  "packagerNgrokUrl": "https://packager.mt-y7m.anonymous.client.exp.direct",
+  "ngrokPid": 8720,
+  "packagerPort": 19001,
+  "packagerPid": 8792,
   "webpackServerPort": null,
   "devToolsPort": 19002
 }
