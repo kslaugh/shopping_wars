@@ -14,7 +14,7 @@ export default ({navigation})=>{
           .catch(e=>console.log(e))
      },[]))
      const hDetail=(id)=>{
-      navigation.navigate('detail',{id:id})
+      navigation.navigate('Detail',{id:id})
      }
   if(items===null){return(<Text>Loading...</Text>)}
   else{

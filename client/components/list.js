@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { ScrollView, View, Text } from 'react-native';
 
 export default (props)=>{
-    console.log('loaded')
     return(
         <ScrollView style={{paddingVertical:20}}>
             {props.items.map((item,idx)=>(
