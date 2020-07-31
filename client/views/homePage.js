@@ -14,6 +14,7 @@ export default ({navigation})=>{
          Axios.get('http://18.223.211.4/api/items/')
          .then(i=>{setItems(i.data.data)})
           .catch(e=>console.log(e))
+          return setItems(null)
      },[]))
      const hDetail=(id)=>{
       navigation.navigate('Detail',{id:id})
@@ -37,7 +38,7 @@ export default ({navigation})=>{
             <Text style={{color:'white'}} title="Add Item">Add Item</Text>
           </View>
         </TouchableWithoutFeedback>
-        <List items={items} press={hDetail} refreshing={refreshing} refresh={hRefresh}/>
+        <List fadeTiming={300} stagger={100} items={items} press={hDetail} refreshing={refreshing} refresh={hRefresh}/>
       </View>
     );
   }
