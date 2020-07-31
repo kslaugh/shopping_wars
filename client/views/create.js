@@ -5,11 +5,9 @@ import Axios from 'axios';
 
 export default ({navigation})=>{
     const hSubmit=()=>{
-        navigation.navigate('Home')
-        // console.log(e)
-        // Axios.post('http://18.223.211.4/api/items/',e)
-        // .then(()=>navigation.navigate('Home'))
-        // .catch(e=>console.log(e))
+        Axios.post('http://18.223.211.4/api/items/',{'name':name,'quantity':quantity})
+        .then(()=>navigation.navigate("Home"))
+        .catch(e=>console.log(e))
     }
     return(
         <View style={{flex:1,justifyContent:'space-evenly',alignItems:"center",flexDirection:"column"}}>
