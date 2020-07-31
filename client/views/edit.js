@@ -21,7 +21,7 @@ export default function Edititem ({route,navigation}){
 
 
     function hClick (event){
-        Axios.put("http://18.223.211.4/api/items/"+id,event)
+        Axios.put("http://18.223.211.4/api/items/"+route.params.id,event)
         .then(()=>navigation.navigate("Home"))
         .catch(e=>console.log(e))
     }
@@ -31,7 +31,7 @@ export default function Edititem ({route,navigation}){
     return(
         <View>
             <Text style={{fontSize: 28, textAlign: 'center', margin: 10}}>Edit Your Shopping Item</Text>
-            <Form item={item} onPress={hClick}/>
+            <Form item={item} submit={hClick}/>
         </View>
     )
 
