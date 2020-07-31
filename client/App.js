@@ -5,7 +5,7 @@ import Home from './views/homePage';
 import { NavigationContainer, StackActions } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import Detail from "./views/detail"
-import Edit from "./views/detail"
+import Edit from "./views/edit"
 
 const Stack=createStackNavigator()
 

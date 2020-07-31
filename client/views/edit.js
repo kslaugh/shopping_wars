@@ -1,14 +1,15 @@
-import React, {useEffect,useState} from 'react';
+import React, {useCallback,useState} from 'react';
 import Form from '../components/form';
 import { View, Text } from 'react-native';
 import Axios from 'axios';
+import { useFocusEffect } from '@react-navigation/native';
 
 
 
 
 export default function Edititem ({route,navigation}){
     const [item, setItem]=useState(null)
-    
+    console.log('test')
     
     useFocusEffect(
         useCallback(()=>{
@@ -16,7 +17,7 @@ export default function Edititem ({route,navigation}){
             Axios.get('http://18.223.211.4/api/items/'+ route.params.id)
             .then(i=>{setItem(i.data)})
              .catch(e=>console.log(e))
-        },[]))
+        },[route]))
 
 
     function hClick (event){
