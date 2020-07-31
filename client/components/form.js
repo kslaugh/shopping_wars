@@ -8,7 +8,7 @@ export default (props)=>{
     const [quantity,setQuantity]=useState('')
     const hClick=()=>{
         Axios.post('http://18.223.211.4/api/items/',{'name':name,'quantity':quantity})
-        .then(props.submit())
+        .then(props.submit)
         .catch(e=>console.log(e))
     }
     return(

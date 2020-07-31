@@ -1,24 +1,30 @@
 import React from 'react';
 import Axios from 'axios';
 import List from '../components/list';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { StyleSheet, Text, View, ScrollView, Button, Alert } from 'react-native';
+import { useFocusEffect } from '@react-navigation/native';
 
 export default ({navigation})=>{
     const[items,setItems]=useState(null)
-  useEffect(()=>{
-    Axios.get('http://18.223.211.4/api/items/')
-    .then(i=>{setItems(i.data.data);
-    console.log(i.data.data)})
-    .catch(e=>console.log(e))
-  },)
+   useFocusEffect(
+     useCallback(()=>{
+         Axios.get('http://18.223.211.4/api/items/')
+         .then(i=>{setItems(i.data.data)})
+          .catch(e=>console.log(e))
+     },[])
+  )
   if(items===null){return(<Text>Loading...</Text>)}
   else{
     return (
       <View style={styles.container}>
         <Text style={styles.title}>Shopping List</Text>
-        <Button onPress={()=>navigation.navigate('Add')} color='blue' title="Add Item"/>
-        <Button onPress={()=>navigation.navigate('Animation')} color="yellow" title="Animation"/>
+        <View style={{margin:10}}>
+          <Button onPress={()=>navigation.navigate('Add')} color='blue' title="Add Item"/>
+        </View>
+        <View>
+          <Button onPress={()=>navigation.navigate('Animation')} color="orange" title="Animation"/>
+        </View>
         <List items={items}/>
       </View>
     );

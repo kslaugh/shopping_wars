@@ -5,7 +5,7 @@ import Axios from 'axios';
 
 export default ({navigation})=>{
     const hSubmit=()=>{
-        navigation.navigate('Home')
+        navigation.navigate('Redirect')
         // console.log(e)
         // Axios.post('http://18.223.211.4/api/items/',e)
         // .then(()=>navigation.navigate('Home'))
