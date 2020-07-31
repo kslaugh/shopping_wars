@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from 'react';
-import { Animated} from 'react-native';
+import { Animated } from 'react-native';
 
 
 const FadeInView = (props) => {
@@ -11,7 +11,7 @@ const FadeInView = (props) => {
         fadeAnim,
         {
           toValue: 1,
-          duration: 3000,
+          duration: 2000,
           useNativeDriver: true
         }
         ).start();
