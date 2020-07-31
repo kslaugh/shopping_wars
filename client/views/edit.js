@@ -3,6 +3,7 @@ import Form from '../components/form';
 import { TouchableWithoutFeedback, Keyboard, View, Text } from 'react-native';
 import Axios from 'axios';
 import { useFocusEffect } from '@react-navigation/native';
+import FadeIn from "../components/fadeIn";
 
 
 
@@ -26,11 +27,15 @@ export default function Edititem ({route,navigation}){
     
     
     return(
-        <TouchableWithoutFeedback onPress={Keyboard.dismiss} >
-            <View style={{flex:1,justifyContent:'space-evenly',alignItems:"center",flexDirection:"column"}}>
-                <Text style={{fontSize: 28, textAlign: 'center', margin: 10}}>Edit Your Shopping Item</Text>
-                <Form item={item} submit={hClick}/>
-            </View>
+        <TouchableWithoutFeedback  onPress={Keyboard.dismiss} >
+            
+                <View style={{flex:1,justifyContent:'space-evenly',alignItems:"center",flexDirection:"column",backgroundColor:"black"}}>
+                    <FadeIn >
+                        <Text style={{fontSize: 28,fontWeight:"bold" ,textAlign: 'center', margin: 10, color:"lightblue"}}>Edit Your Shopping Item</Text>
+                        <Form item={item} submit={hClick}/>
+                    </FadeIn>
+                </View>
+            
         </TouchableWithoutFeedback>
     )
 
