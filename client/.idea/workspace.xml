@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="bcd0fd92-d004-4dc0-8eb9-08a41a475c00" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.expo/packager-info.json" beforeDir="false" afterPath="$PROJECT_DIR$/.expo/packager-info.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/fadeIn.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/fadeIn.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/form.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/form.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/create.js" beforeDir="false" afterPath="$PROJECT_DIR$/views/create.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/detail.js" beforeDir="false" afterPath="$PROJECT_DIR$/views/detail.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/edit.js" beforeDir="false" afterPath="$PROJECT_DIR$/views/edit.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="C:\Users\Kyle\Desktop\local_projects\Shopping_list\client\.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1fRP7ShcDtGWAv7s0PvNNpYQr6b" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bcd0fd92-d004-4dc0-8eb9-08a41a475c00" name="Default Changelist" comment="" />
+      <created>1596177765367</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1596177765367</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="742" y="397" key="#Notifications" timestamp="1596178736287">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="742" y="397" key="#Notifications/3840.1074.1920.1020/0.0.2560.1400/5760.0.2560.1400@0.0.2560.1400" timestamp="1596178736287" />
+    <state x="6608" y="235" width="1200" height="800" key="com.android.tools.idea.avdmanager.AvdListDialog" timestamp="1596217534132">
+      <screen x="5760" y="0" width="2560" height="1400" />
+    </state>
+    <state x="711" y="166" width="1200" height="800" key="com.android.tools.idea.avdmanager.AvdListDialog/3840.1074.1920.1020/0.0.2560.1400/5760.0.2560.1400@0.0.2560.1400" timestamp="1596179045626" />
+    <state x="7036" y="189" width="1200" height="800" key="com.android.tools.idea.avdmanager.AvdListDialog/3840.1074.1920.1020/0.0.2560.1400/5760.0.2560.1400@5760.0.2560.1400" timestamp="1596179801445" />
+    <state x="6608" y="235" width="1200" height="800" key="com.android.tools.idea.avdmanager.AvdListDialog/3840.1074.1920.1020/5760.0.2560.1400/0.0.2560.1400@5760.0.2560.1400" timestamp="1596217534132" />
+    <state x="6736" y="524" key="com.intellij.ide.util.TipDialog" timestamp="1596217514086">
+      <screen x="5760" y="0" width="2560" height="1400" />
+    </state>
+    <state x="976" y="524" key="com.intellij.ide.util.TipDialog/3840.1074.1920.1020/0.0.2560.1400/5760.0.2560.1400@0.0.2560.1400" timestamp="1596178589451" />
+    <state x="6736" y="524" key="com.intellij.ide.util.TipDialog/3840.1074.1920.1020/5760.0.2560.1400/0.0.2560.1400@5760.0.2560.1400" timestamp="1596217514086" />
+  </component>
+</project>
