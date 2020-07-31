@@ -12,8 +12,10 @@ export default ({navigation})=>{
          Axios.get('http://18.223.211.4/api/items/')
          .then(i=>{setItems(i.data.data)})
           .catch(e=>console.log(e))
-     },[])
-  )
+     },[]))
+     const hDetail=(id)=>{
+      navigation.navigate('detail',{id:id})
+     }
   if(items===null){return(<Text>Loading...</Text>)}
   else{
     return (
@@ -25,7 +27,7 @@ export default ({navigation})=>{
         <View>
           <Button onPress={()=>navigation.navigate('Animation')} color="orange" title="Animation"/>
         </View>
-        <List items={items}/>
+        <List items={items} press={hDetail}/>
       </View>
     );
   }

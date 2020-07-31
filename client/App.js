@@ -7,7 +7,6 @@ import { NavigationContainer, StackActions } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { startClock } from 'react-native-reanimated';
 import animation from './views/animation';
-import Redirect from './views/redirect';
 import Detail from "./views/detail"
 
 const Stack=createStackNavigator()
@@ -31,15 +30,10 @@ export default function App() {
             component={animation}
           />
           <Stack.Screen
-            name="Redirect"
-            component={Redirect}
-          />
-          <Stack.Screen
             name="Detail"
             component={detail}
           />
         </Stack.Navigator>
-        
       </NavigationContainer>
   );
 }
